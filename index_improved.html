@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larlight News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffffffcc;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      backdrop-filter: blur(5px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #0055aa;
+    }
+    .container {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+    .section {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .section h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+    .article-preview {
+      padding: 15px 20px;
+      background: #f1f1f1;
+      border-left: 5px solid #0077cc;
+      margin-bottom: 20px;
+      transition: background 0.2s ease;
+    }
+    .article-preview:hover {
+      background: #e6f0ff;
+    }
+    .article-preview a {
+      text-decoration: none;
+      color: #222;
+    }
+    .article-preview a:hover {
+      text-decoration: underline;
+    }
+    .full-article {
+      display: none;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+    }
+    .full-article.active {
+      display: block;
+    }
+    .full-article img {
+      max-width: 100%;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 15px;
+      color: #555;
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #666;
+      background: #f1f1f1;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Larlight News</h1>
+    <nav>
+      <a href="#politics">Politics</a>
+      <a href="#culture">Culture</a>
+      <a href="#food">Fast Food</a>
+      <a href="#world">World</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section" id="politics">
+      <h2>Politics</h2>
+      <div class="article-preview">
+        <a href="#" onclick="document.getElementById('article1').classList.toggle('active'); return false;">
+          <h3>Trump announces every fast-food restaurant in America is going to get banned</h3>
+        </a>
+        <p><em>Thursday, 22nd May 2025 — By Micheal Nikey</em></p>
+      </div>
+      <div id="article1" class="full-article">
+        <p>Yesterday, President Trump made his most controversial-yet speech to Americans.</p>
+        <p>Among other minor announcements, he declared that every fast-food restaurant will be banned from the country. “…and on our path to make America great again, I must also ban fast-food restaurants from the country, as they have become too European controlled,” he said during yesterday’s rally.</p>
+        <img src="https://i.imgur.com/TO4NOdP.png" alt="Trump announcing Trump Burger">
+        <p><strong>Photo:</strong> Trump announcing the new only American fast food restaurant.</p>
+        <p>Since then, many Americans have expressed their disagreement, with thousands of protests erupting across the country. One of the biggest is currently taking place in Washington D.C., with protestors holding signs like “Save American Culture” and “Don’t Let Our History Die.”</p>
+        <img src="https://i.imgur.com/SeE6RFI.png" alt="Protest in Washington D.C.">
+        <p><strong>Photo:</strong> Protest in Washington D.C. against fast foods ban.</p>
+        <p>McDonald’s CEO Chris Kempczinski announced this morning on X (formerly Twitter):</p>
+        <img src="https://i.imgur.com/jcJo5ER.png" alt="Chris Kempczinski tweet">
+        <blockquote><em>“Following President Trump’s announcement earlier today, our executive team is actively exploring plans to relocate McDonald’s global headquarters to the United Kingdom.”</em></blockquote>
+        <p>While Burger King CEO, Daniel S. Schwartz more notably tweeted:</p>
+        <img src="https://i.imgur.com/vUZnI5J.png" alt="Daniel S. Schwartz tweet">
+        <blockquote><em>“We are not going down without a fight.”</em></blockquote>
+        <p>During an interview two hours ago, Trump was asked if he would reverse the decision amid the chaos. He replied: “No, I will continue to make my bank a- (unintelligible) America great again no matter how many obstacles there are.”</p>
+        <img src="https://i.imgur.com/NbdDkNg.png" alt="Trump Burger logo">
+        <p><strong>Photo:</strong> Logo of Trump burger, as announced at Trump’s speech.</p>
+      </div>
+    </div>
+
+    <div class="section" id="culture">
+      <h2>Culture</h2>
+      <div class="article-placeholder">Waiting for society to mess up again...</div>
+    </div>
+
+    <div class="section" id="food">
+      <h2>Fast Food</h2>
+      <div class="article-placeholder">No burger battles have been reported yet.</div>
+    </div>
+
+    <div class="section" id="world">
+      <h2>World</h2>
+      <div class="article-placeholder">International nonsense loading...</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Larlight News. All facts are fake. All satire is intentional.
+  </footer>
+</body>
+</html>

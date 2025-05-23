@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Larlight News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0;
+    }
+    header .tagline {
+      font-style: italic;
+      color: #666;
+      margin-top: 5px;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .ticker {
+      background: #e8e8e8;
+      font-size: 0.9em;
+      padding: 8px 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-bottom: 1px solid #ccc;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .main-content {
+      display: flex;
+      gap: 30px;
+    }
+    .main {
+      flex: 3;
+    }
+    .sidebar {
+      flex: 1;
+    }
+    .article-card {
+      display: flex;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+      margin-bottom: 30px;
+      transition: transform 0.2s;
+    }
+    .article-card:hover {
+      transform: scale(1.01);
+    }
+    .article-card img {
+      width: 160px;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em;
+      margin: 0 0 10px;
+    }
+    .headline a {
+      text-decoration: none;
+      color: #111;
+    }
+    .headline a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85em;
+      color: #777;
+    }
+    .sidebar h3 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .sidebar li a {
+      text-decoration: none;
+      color: #333;
+    }
+    .sidebar li a:hover {
+      text-decoration: underline;
+    }
+    .sections {
+      margin-top: 60px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8em;
+      margin: 20px 0 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .section-card {
+      display: flex;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    .section-card img {
+      width: 140px;
+      object-fit: cover;
+    }
+    .section-card .card-content {
+      padding: 15px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+      margin-top: 40px;
+      padding: 20px;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Larlight News</h1>
+    <div class="tagline">Reality with a Twist</div>
+  </header>
+
+  <nav>
+    <a href="#politics">Politics</a>
+    <a href="#culture">Culture</a>
+    <a href="#food">Fast Food</a>
+    <a href="#world">World</a>
+  </nav>
+
+  <div class="ticker">
+    Newswire: Call Ignored In The Order It Was Received • Burger King Says “Not Without a Fight” • Trump Announces Trump Burger
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="main">
+        <div class="article-card">
+          <img src="https://i.imgur.com/TO4NOdP.png" alt="Trump announcing Trump Burger">
+          <div class="card-content">
+            <div class="headline"><a href="trump-ban.html">Trump announces every fast-food restaurant in America is going to get banned</a></div>
+            <div class="meta">Thursday, 22nd May 2025 — By Micheal Nikey</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <h3>Trending</h3>
+        <ul>
+          <li><a href="#">Trip To Europe Convinces American That Croissants Are Real</a></li>
+          <li><a href="#">No-Nonsense Doctor Diagnoses Patient Using Meme Format</a></li>
+          <li><a href="#">AI Writes Better Satire Than Interns</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sections">
+      <div id="politics">
+        <div class="section-title">Politics</div>
+        <div class="section-card">
+          <img src="https://i.imgur.com/TO4NOdP.png" alt="Trump speech">
+          <div class="card-content">
+            <div class="headline"><a href="trump-ban.html">Trump announces every fast-food restaurant in America is going to get banned</a></div>
+            <div class="meta">Thursday, 22nd May 2025 — By Micheal Nikey</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="culture">
+        <div class="section-title">Culture</div>
+        <div class="section-card">
+          <img src="https://i.imgur.com/SeE6RFI.png" alt="Protest photo">
+          <div class="card-content">
+            <div class="headline"><a href="#">Thousands protest to save American fast-food culture</a></div>
+            <div class="meta">Friday, 23rd May 2025 — By Lana Fries</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="food">
+        <div class="section-title">Fast Food</div>
+        <div class="section-card">
+          <img src="https://i.imgur.com/jcJo5ER.png" alt="Tweet from McDonald's CEO">
+          <div class="card-content">
+            <div class="headline"><a href="#">McDonald’s prepares for mass HQ exodus after ban</a></div>
+            <div class="meta">Friday, 23rd May 2025 — By Tom Chikin</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="world">
+        <div class="section-title">World</div>
+        <div class="section-card">
+          <img src="https://i.imgur.com/vUZnI5J.png" alt="Tweet from Burger King CEO">
+          <div class="card-content">
+            <div class="headline"><a href="#">Burger King says “Not without a fight” in international response</a></div>
+            <div class="meta">Friday, 23rd May 2025 — By Wendy Flame</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Larlight News. All facts are fake. All satire is intentional.
+  </footer>
+</body>
+</html>

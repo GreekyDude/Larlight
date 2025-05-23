@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Larlight News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8f8f8;
+      color: #111;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0;
+    }
+    header .tagline {
+      font-style: italic;
+      color: #666;
+      margin-top: 5px;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .ticker {
+      background: #e8e8e8;
+      font-size: 0.9em;
+      padding: 8px 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-bottom: 1px solid #ccc;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .headline-layout {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .main-story {
+      flex: 2.5;
+    }
+    .main-story h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4em;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    .main-story h2 a {
+      text-decoration: none;
+      color: #000;
+    }
+    .main-story h2 a:hover {
+      text-decoration: underline;
+    }
+    .main-story .meta {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .main-story p {
+      font-size: 1.1em;
+      color: #111;
+    }
+    .main-story img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .trending {
+      flex: 1;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      height: fit-content;
+    }
+    .trending h3 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      background: #006400;
+      color: #fff;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    .trending-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .trending-item img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .trending-item .text {
+      flex: 1;
+    }
+    .trending-item .category {
+      color: #006400;
+      font-weight: bold;
+      font-size: 0.85em;
+      margin-bottom: 3px;
+    }
+    .trending-item .headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 1em;
+      margin: 0;
+      color: #000;
+    }
+    .trending-item .headline a {
+      text-decoration: none;
+      color: #000;
+    }
+    .trending-item .headline a:hover {
+      text-decoration: underline;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .grid-article {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .grid-article:hover {
+      transform: scale(1.01);
+    }
+    .grid-article img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .grid-content {
+      padding: 15px;
+    }
+    .category {
+      color: #006400;
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+    .headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2em;
+      margin: 0;
+    }
+    .headline a {
+      text-decoration: none;
+      color: #111;
+    }
+    .headline a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+      margin-top: 40px;
+      padding: 20px;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Larlight News</h1>
+    <div class="tagline">Reality with a Twist</div>
+  </header>
+
+  <nav>
+    <a href="#politics">Politics</a>
+    <a href="#culture">Culture</a>
+    <a href="#food">Fast Food</a>
+    <a href="#world">World</a>
+  </nav>
+
+  <div class="ticker">
+    Newswire: Call Ignored In The Order It Was Received • Burger King Says “Not Without a Fight” • Trump Announces Trump Burger
+  </div>
+
+  <div class="container">
+    <div class="headline-layout">
+      <div class="main-story">
+        <h2><a href="trump-ban.html">Trump announces every fast-food restaurant in America is going to get banned</a></h2>
+        <div class="meta">Thursday, 22nd May 2025 — By Micheal Nikey</div>
+        <img src="https://i.imgur.com/TO4NOdP.png" alt="Trump Speech" />
+        <p>In a stunning turn of events, President Trump declared the complete ban of foreign-owned fast-food chains in the United States, citing cultural preservation.</p>
+      </div>
+
+      <div class="trending">
+        <h3>Trending</h3>
+        <div class="trending-item">
+          <img src="https://i.imgur.com/Ta6RkUt.jpg" alt="Soup"/>
+          <div class="text">
+            <div class="category">Local</div>
+            <div class="headline"><a href="#">Trip To Asia Gives Man New Understanding Of How Soup Can Be Breakfast</a></div>
+          </div>
+        </div>
+        <div class="trending-item">
+          <img src="https://i.imgur.com/YO3xPV7.jpg" alt="Nurse"/>
+          <div class="text">
+            <div class="category">Local</div>
+            <div class="headline"><a href="#">No-Nonsense Nurse Completes Entire Medical Chart After Pinching Arm Flab Once</a></div>
+          </div>
+        </div>
+        <div class="trending-item">
+          <img src="https://i.imgur.com/BY0XnV1.jpg" alt="Relationship"/>
+          <div class="text">
+            <div class="category">Local</div>
+            <div class="headline"><a href="#">Relationship Experts Recommend Saying ‘I Love You’ Even If You Don’t Mean It</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid-article">
+        <img src="https://i.imgur.com/SeE6RFI.png" alt="Protest Image">
+        <div class="grid-content">
+          <div class="category">Culture</div>
+          <div class="headline"><a href="#">Thousands protest to save American fast-food culture</a></div>
+        </div>
+      </div>
+
+      <div class="grid-article">
+        <img src="https://i.imgur.com/jcJo5ER.png" alt="McDonald's Tweet">
+        <div class="grid-content">
+          <div class="category">Fast Food</div>
+          <div class="headline"><a href="#">McDonald’s prepares for mass HQ exodus after ban</a></div>
+        </div>
+      </div>
+
+      <div class="grid-article">
+        <img src="https://i.imgur.com/vUZnI5J.png" alt="Burger King Tweet">
+        <div class="grid-content">
+          <div class="category">World</div>
+          <div class="headline"><a href="#">Burger King says “Not without a fight” in international response</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Larlight News. All facts are fake. All satire is intentional.
+  </footer>
+</body>
+</html>
